@@ -1,6 +1,11 @@
+ HEAD
 actions-runner-linux/
 actions-runner/
 actions-runner-linux/
 _work/
 node_modules/
 *.log
+
+node_modules
+.DS_Store
+1a2f33f9bef6f2ff9d07ca94fcc77dfcaba9ea16
