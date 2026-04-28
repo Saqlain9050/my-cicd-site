@@ -1,0 +1,6 @@
+actions-runner-linux/
+actions-runner/
+actions-runner-linux/
+_work/
+node_modules/
+*.log

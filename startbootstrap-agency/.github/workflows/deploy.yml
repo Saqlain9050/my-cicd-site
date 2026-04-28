@@ -1,0 +1,25 @@
+name: Auto Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to live folder
+        run: |
+          mkdir -p /c/Users/HMS\ COMPUTER/Desktop/live-site
+          cp -r dist/* /c/Users/HMS\ COMPUTER/Desktop/live-site
